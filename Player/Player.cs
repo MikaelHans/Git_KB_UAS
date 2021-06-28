@@ -247,9 +247,14 @@ public class Player : Game_Character, IAttackable, IAttacking
 
             foreach (Quest_Objective qobj in active_quest.Quest_objective)
             {
-
+                if (!(qobj.completed() >= qobj.Count))
+                {
+                    return false;
+                }
             }
-
+            active_quest.complete_quest();
+            Has_active_quest = false;
+            active_quest = null;
             return true;
         }
         return false;

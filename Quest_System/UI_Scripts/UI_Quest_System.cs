@@ -18,9 +18,10 @@ public class UI_Quest_System : Base_UI
         _isactive = true;
         Setup_UI();        
     }
-    public void init()
+    public void init()//from click button(acticve quest)
     {
-        if(GetComponent<Canvas>().enabled == false)
+        _isactive = true;
+        if (GetComponent<Canvas>().enabled == false)
         {
             GetComponent<Canvas>().enabled = true;
             Quest quest = FindObjectOfType<Player>().Active_quest;

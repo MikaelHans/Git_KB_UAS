@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Quest_Gathering : Quest
+public class Quest_Slaying : Quest
 {
-   
+    
 }

@@ -40,9 +40,5 @@ public class Quest : MonoBehaviour
     public float Time_limit { get => time_limit; set => time_limit = value; }
     public int QuestGiver_id { get => _questGiver_id; set => _questGiver_id = value; }
     public List<Quest_Objective> Quest_objective { get => _quest_objective; set => _quest_objective = value; }
-
-    public void open_quest()
-    {
-
-    }
+    public virtual void complete_quest() { }
 }

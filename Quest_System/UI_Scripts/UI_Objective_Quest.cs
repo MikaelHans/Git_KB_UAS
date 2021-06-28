@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UI_Objective_Quest : Base_UI
 {
-    public Text _objective_name, _objective_count;
+    public Text _objective_name, _objective_count, _complete;
     public Image _objective_sprite;
     public Quest_Objective _quest_objective;
     public override void Setup_UI()
@@ -21,6 +21,10 @@ public class UI_Objective_Quest : Base_UI
         if (isactive)
         {
             _objective_count.text = quest_obj.Count.ToString() + '/' + quest_obj.completed();
+            if(quest_obj.Count <= quest_obj.completed())
+            {
+                _complete.enabled = true;
+            }
         }
         else
         {

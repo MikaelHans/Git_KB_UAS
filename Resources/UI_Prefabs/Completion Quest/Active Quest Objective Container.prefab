@@ -366,4 +366,6 @@ MonoBehaviour:
   _content: {fileID: 0}
   _objective_name: {fileID: 6407221025796058644}
   _objective_count: {fileID: 5841665927560404470}
+  _complete: {fileID: 4341658071539546147}
   _objective_sprite: {fileID: 3338962701516459353}
+  _quest_objective: {fileID: 0}
