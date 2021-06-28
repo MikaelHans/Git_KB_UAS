@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 2439955155986546999}
   - component: {fileID: 2439955155986546998}
   - component: {fileID: 2439955155986546953}
+  - component: {fileID: -4108716986931755846}
   - component: {fileID: 2439955155986546954}
   - component: {fileID: 2439955155986546956}
   - component: {fileID: 2439955155986546955}
   - component: {fileID: 586800497589024325}
-  - component: {fileID: -4108716986931755846}
   m_Layer: 11
   m_Name: Vladimir Bat
   m_TagString: Untagged
@@ -115,6 +115,40 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
+--- !u!114 &-4108716986931755846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2439955155986546997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86a5f003d4750d74ab1057a483a5b4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _move_speed: 3
+  _hp: 80
+  attack_rate: 1
+  attack_window: 0
+  _defense: 0
+  _damage: 5
+  force: 50
+  _attack_range: 5
+  ai_rigidbody: {fileID: 0}
+  item_to_drop: {fileID: 8086514214766131699, guid: f356ae442cd9017409ae6444be10bf66,
+    type: 3}
+  defense: 0
+  path_seeker: {fileID: 0}
+  direction: {x: 0, y: 0}
+  random_movement_radius: 5
+  target: {fileID: 0}
+  next_waypoint_trigger: 0.5
+  stop_time: 3
+  stop_window: 0
+  charge_force: 1.5
+  in_range: 0
+  _bullet: {fileID: 6897278110877826690, guid: bb429917399a7d3458ad8cb493b21b60, type: 3}
 --- !u!50 &2439955155986546954
 Rigidbody2D:
   serializedVersion: 4
@@ -197,36 +231,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-4108716986931755846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2439955155986546997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86a5f003d4750d74ab1057a483a5b4d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _move_speed: 3
-  _hp: 80
-  attack_rate: 1
-  attack_window: 0
-  _defense: 0
-  _damage: 5
-  force: 50
-  _attack_range: 0
-  ai_rigidbody: {fileID: 0}
-  item_to_drop: {fileID: 8086514214766131699, guid: f356ae442cd9017409ae6444be10bf66,
-    type: 3}
-  defense: 0
-  path_seeker: {fileID: 0}
-  direction: {x: 0, y: 0}
-  random_movement_radius: 5
-  target: {fileID: 0}
-  next_waypoint_trigger: 0.5
-  stop_time: 3
-  stop_window: 0
-  charge_force: 1
-  in_range: 0

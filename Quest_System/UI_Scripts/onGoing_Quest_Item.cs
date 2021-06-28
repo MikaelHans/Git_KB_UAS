@@ -13,7 +13,7 @@ public class onGoing_Quest_Item : Quest_Item_UI
         questItem = _quest_item;
         player = _player;
         itemname = questItem.Item.item_name;
-
+       
         item_sprite.sprite = questItem.Item.GetComponent<SpriteRenderer>().sprite;
         UI_item_name.text = questItem.Item.item_name;
         UI_item_count.text = player.get_inventory().search_item(questItem.Item).ToString() + "/" + questItem.Count.ToString();

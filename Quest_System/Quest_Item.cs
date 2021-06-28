@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Quest_Item : MonoBehaviour
+public class Quest_Item : Quest_Objective
 {
     [SerializeField]
     Item item;
-    [SerializeField]
-    int count;
+    
 
     public Quest_Item(Item item, int count = 1)
     {
@@ -15,6 +14,5 @@ public class Quest_Item : MonoBehaviour
         this.count = count;
     }
 
-    public Item Item { get => item; set => item = value; }
-    public int Count { get => count; set => count = value; }
+    public Item Item { get => item; set => item = value; }    
 }

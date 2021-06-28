@@ -67,7 +67,7 @@ public class Ranged_Enemy : Enemy
         bulletinitdata[0] = charge.x;
         bulletinitdata[1] = charge.y;
         projectile elo = Instantiate(_bullet, transform.position + adjustspawn, transform.rotation, transform);
-        elo.GetComponent<Rigidbody2D>().AddForce(new Vector2(charge.x, charge.y), ForceMode2D.Impulse);
+        elo.GetComponent<Rigidbody2D>().AddForce(charge, ForceMode2D.Impulse);
     }
 
     //private void OnDrawGizmos()
