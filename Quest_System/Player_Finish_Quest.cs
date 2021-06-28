@@ -11,7 +11,7 @@ public class Player_Finish_Quest : Player_Action
     }
     public override void action()
     {
-        _player.finish_quest();
+        Debug.Log(_player.finish_quest());
         GetComponentInParent<UI_Quest_System>().closecanvas();
     }
 }

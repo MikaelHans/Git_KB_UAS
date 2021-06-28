@@ -8,7 +8,7 @@ public class UI_Quest_System : Base_UI
     bool _isactive;
     public void init(List<Quest> questlist)//questlist
     {
-        _questlist = questlist;
+        _questlist.AddRange(questlist);
         Setup_UI();
         _isactive = false;
     }

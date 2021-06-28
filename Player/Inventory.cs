@@ -79,7 +79,7 @@ public class Inventory : MonoBehaviour
             {
                 if (slot.is_empty == false)
                 {
-                    if (slot.GetItem().GetType() == item.Objective.GetType())
+                    if (slot.GetItem().GetType() == item.Objective.GetComponent<Item>().GetType())
                     {
                         slot.substract_item(item.Count);
                     }
