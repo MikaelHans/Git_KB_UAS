@@ -98,6 +98,7 @@ public class Enemy : Creature, IAttacking
         base.die();
         Destroy(container_gameobject);
         drop_item();
+        Event_Manager.Slayed_Monster.Invoke();
         Destroy(gameObject);
     }
 

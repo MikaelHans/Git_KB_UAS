@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Quest_Slaying : Quest
 {
-    
+   
 }
