@@ -43,5 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 741a28b0f0de9c948a0d98e03e2d51fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 8086514214766131699, guid: f356ae442cd9017409ae6444be10bf66, type: 3}
-  count: 0
+  _objective: {fileID: 3797229373949449179, guid: f356ae442cd9017409ae6444be10bf66,
+    type: 3}
+  _name: Vampire Blood

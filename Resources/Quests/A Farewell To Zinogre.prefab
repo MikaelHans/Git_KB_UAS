@@ -48,8 +48,8 @@ MonoBehaviour:
   quest_description: 
   quest_title: A Farewell To Zinogre
   time_limit: 0
-  quest_item:
-  - {fileID: 1157456045361414580}
+  _quest_objective:
+  - {fileID: 6191502470394961593}
   - {fileID: 3736178815152269410}
   _questGiver_id: 0
 --- !u!1001 &1886009797794995280
@@ -206,6 +206,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1202123035802608090, guid: 8824dfa510a94694b9186679166ef813,
+        type: 3}
+      propertyPath: count
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6148101912247484119, guid: 8824dfa510a94694b9186679166ef813,
         type: 3}
       propertyPath: count
@@ -224,9 +229,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4990672530060377955}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1157456045361414580 stripped
+--- !u!114 &6191502470394961593 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6148101912247484119, guid: 8824dfa510a94694b9186679166ef813,
+  m_CorrespondingSourceObject: {fileID: 1202123035802608090, guid: 8824dfa510a94694b9186679166ef813,
     type: 3}
   m_PrefabInstance: {fileID: 4990672530060377955}
   m_PrefabAsset: {fileID: 0}

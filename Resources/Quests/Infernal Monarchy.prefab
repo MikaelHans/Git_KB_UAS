@@ -49,9 +49,9 @@ MonoBehaviour:
   quest_description: 
   quest_title: Infernal Monarchy
   time_limit: 0
-  quest_item:
+  _quest_objective:
   - {fileID: 7957573244852003697}
-  - {fileID: 1142373089831422508}
+  - {fileID: 5343020476532987169}
   - {fileID: 8901500219488831053}
   _questGiver_id: 0
 --- !u!1001 &464818074151752782
@@ -300,6 +300,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1202123035802608090, guid: 8824dfa510a94694b9186679166ef813,
+        type: 3}
+      propertyPath: count
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6148101912247484119, guid: 8824dfa510a94694b9186679166ef813,
         type: 3}
       propertyPath: count
@@ -318,9 +323,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6523732722097534203}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1142373089831422508 stripped
+--- !u!114 &5343020476532987169 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6148101912247484119, guid: 8824dfa510a94694b9186679166ef813,
+  m_CorrespondingSourceObject: {fileID: 1202123035802608090, guid: 8824dfa510a94694b9186679166ef813,
     type: 3}
   m_PrefabInstance: {fileID: 6523732722097534203}
   m_PrefabAsset: {fileID: 0}

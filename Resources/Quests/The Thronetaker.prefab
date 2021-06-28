@@ -48,7 +48,7 @@ MonoBehaviour:
   quest_description: 
   quest_title: The Thronetaker
   time_limit: 0
-  quest_item:
+  _quest_objective:
   - {fileID: 1749846821779838273}
   - {fileID: 3267024409476705216}
   _questGiver_id: 0

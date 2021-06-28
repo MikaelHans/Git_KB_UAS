@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 323570328196509890}
-  - component: {fileID: 6148101912247484119}
+  - component: {fileID: 1202123035802608090}
   m_Layer: 0
   m_Name: QI_Gem
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6148101912247484119
+--- !u!114 &1202123035802608090
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,5 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 741a28b0f0de9c948a0d98e03e2d51fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 6434132078260231591, guid: 571e713ab460541449cdefb99b683ef3, type: 3}
-  count: 0
+  _objective: {fileID: 6434132078260231586, guid: 571e713ab460541449cdefb99b683ef3,
+    type: 3}
+  _name: Gem

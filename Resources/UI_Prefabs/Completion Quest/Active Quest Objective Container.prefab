@@ -319,9 +319,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3123138819836402447}
-  - component: {fileID: 4080352007082789386}
+  - component: {fileID: 4884414237393445805}
   m_Layer: 5
-  m_Name: Active Quest Item Container
+  m_Name: Active Quest Objective Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -350,7 +350,7 @@ RectTransform:
   m_AnchoredPosition: {x: 91.49948, y: -199.82358}
   m_SizeDelta: {x: 100, y: 96.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4080352007082789386
+--- !u!114 &4884414237393445805
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -359,11 +359,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6990199270896521487}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d93b658d4af9c4db3beebf95e1ab06, type: 3}
+  m_Script: {fileID: 11500000, guid: d55fc2129e8dfe64cbb6b7d451896791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item_sprite: {fileID: 3338962701516459353}
-  UI_item_name: {fileID: 6407221025796058644}
-  UI_item_count: {fileID: 5841665927560404470}
-  questItem: {fileID: 0}
-  item_complete_text: {fileID: 4341658071539546147}
+  _prefab: {fileID: 0}
+  _content: {fileID: 0}
+  _objective_name: {fileID: 6407221025796058644}
+  _objective_count: {fileID: 5841665927560404470}
+  _objective_sprite: {fileID: 3338962701516459353}

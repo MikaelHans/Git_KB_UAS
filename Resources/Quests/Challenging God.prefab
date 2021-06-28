@@ -29,7 +29,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6106371784459316865}
-  - {fileID: 5681404736014298593}
   - {fileID: 3563783762243867848}
   - {fileID: 7199042302739444823}
   - {fileID: 6348392165974863375}
@@ -51,9 +50,8 @@ MonoBehaviour:
   quest_description: 
   quest_title: Challenging God
   time_limit: 0
-  quest_item:
+  _quest_objective:
   - {fileID: 3622497690998372304}
-  - {fileID: 2303477836107867124}
   - {fileID: 3563783762243867849}
   - {fileID: 7199042302739444820}
   - {fileID: 6348392165974863368}
@@ -170,7 +168,7 @@ PrefabInstance:
     - target: {fileID: 6362571862440495415, guid: d4ac0d8c0fb42e140bbdf8d868b8b488,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6362571862440495415, guid: d4ac0d8c0fb42e140bbdf8d868b8b488,
         type: 3}
@@ -262,7 +260,7 @@ PrefabInstance:
     - target: {fileID: 2033446537667929804, guid: fb1faf2d2d3d3db47b91b43badffed58,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2033446537667929804, guid: fb1faf2d2d3d3db47b91b43badffed58,
         type: 3}
@@ -334,98 +332,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 741a28b0f0de9c948a0d98e03e2d51fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &5378963707736415523
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5712464627278631851}
-    m_Modifications:
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.151711
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.268645
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -102.8114
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6148101912247484119, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: count
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8159851861374255666, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_Name
-      value: QI_Gem
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8824dfa510a94694b9186679166ef813, type: 3}
---- !u!4 &5681404736014298593 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-    type: 3}
-  m_PrefabInstance: {fileID: 5378963707736415523}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2303477836107867124 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6148101912247484119, guid: 8824dfa510a94694b9186679166ef813,
-    type: 3}
-  m_PrefabInstance: {fileID: 5378963707736415523}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 741a28b0f0de9c948a0d98e03e2d51fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5516413293353715402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -436,7 +342,7 @@ PrefabInstance:
     - target: {fileID: 9077892195738882562, guid: 1f9a8e5a938e7d14f8ba841aa45da798,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9077892195738882562, guid: 1f9a8e5a938e7d14f8ba841aa45da798,
         type: 3}

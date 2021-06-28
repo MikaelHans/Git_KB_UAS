@@ -33,8 +33,7 @@ public class Player : Game_Character, IAttackable, IAttacking
     private Inventory player_inventory = new Inventory();
     [SerializeField]
     Quest active_quest;
-    [SerializeField]
-    Active_Quest player_active_quest_UI;
+    
 
     public bool Has_active_quest { get => has_active_quest; set => has_active_quest = value; }
     public Quest Active_quest { get => active_quest; set => active_quest = value; }
@@ -52,10 +51,9 @@ public class Player : Game_Character, IAttackable, IAttacking
         playerName = gameObject.GetComponentInChildren<TextMeshPro>();
         player_inventory = GameObject.FindGameObjectsWithTag("Inventory_UI")[1].GetComponent<Inventory>();
         //DontDestroyOnLoad(GameObject.FindGameObjectsWithTag("Inventory_UI")[1].GetComponent<Inventory>());
-        player_active_quest_UI = GameObject.FindGameObjectWithTag("Quest_UI").GetComponent<Active_Quest>();
+        
         Has_active_quest = false;
-        FindObjectOfType<Active_Quest>().Player = this;
-        FindObjectOfType<QuestListContent>().Player = this;
+       
        
     }
 
@@ -236,17 +234,17 @@ public class Player : Game_Character, IAttackable, IAttacking
 
     public bool finish_quest()
     {
-        if (has_active_quest == true)
-        {
-            foreach (Quest_Item item in active_quest.Quest_item)
-            {
-                player_inventory.subtract_item(item);
-                active_quest = null;
-            }
-            //player_active_quest_UI.setup_UI(active_quest);
-            Has_active_quest = false;
-            return true;
-        }
+        //if (has_active_quest == true)
+        //{
+        //    foreach (Quest item in active_quest.Quest_item)
+        //    {
+        //        player_inventory.subtract_item(item);
+        //        active_quest = null;
+        //    }
+        //    //player_active_quest_UI.setup_UI(active_quest);
+        //    Has_active_quest = false;
+        //    return true;
+        //}
         return false;
     }
 

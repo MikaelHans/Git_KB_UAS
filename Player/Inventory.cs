@@ -71,30 +71,30 @@ public class Inventory : MonoBehaviour
         //}
     }
 
-    public void subtract_item(Quest_Item item)
-    {
-        foreach (Slot slot in inventory_slots)
-        {
-            try
-            {
-                if (slot.is_empty == false)
-                {
-                    if (slot.GetItem().GetType() == item.Item.GetType())
-                    {
-                        slot.substract_item(item.Count);
-                    }
-                }
-                //else
-                //{
-                //    break;
-                //}
-            }
-            catch (System.NullReferenceException)
-            {
-                break;
-            }
-        }        
-    }
+    //public void subtract_item(Quest_Item item)
+    //{
+    //    foreach (Slot slot in inventory_slots)
+    //    {
+    //        try
+    //        {
+    //            if (slot.is_empty == false)
+    //            {
+    //                if (slot.GetItem().GetType() == item.Objective.GetType())
+    //                {
+    //                    slot.substract_item(item.Count);
+    //                }
+    //            }
+    //            //else
+    //            //{
+    //            //    break;
+    //            //}
+    //        }
+    //        catch (System.NullReferenceException)
+    //        {
+    //            break;
+    //        }
+    //    }        
+    //}
 
     public int search_item(Item item)
     {

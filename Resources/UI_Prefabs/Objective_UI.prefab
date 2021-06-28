@@ -165,9 +165,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3563993850012290350}
-  - component: {fileID: 761580322972497779}
+  - component: {fileID: 5997402156814174208}
   m_Layer: 5
-  m_Name: Requested_Item_Container
+  m_Name: Objective_UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,7 +195,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &761580322972497779
+--- !u!114 &5997402156814174208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,12 +204,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4169713695039665202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51c326232ffd31e43a0d695f915f04c3, type: 3}
+  m_Script: {fileID: 11500000, guid: d55fc2129e8dfe64cbb6b7d451896791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item_sprite: {fileID: 8670905325435372248}
-  UI_item_name: {fileID: 2201166965716260679}
-  UI_item_count: {fileID: 3966189609818444365}
+  _prefab: {fileID: 0}
+  _content: {fileID: 0}
+  _objective_name: {fileID: 2201166965716260679}
+  _objective_count: {fileID: 3966189609818444365}
+  _objective_sprite: {fileID: 8670905325435372248}
 --- !u!1 &4919797817220187282
 GameObject:
   m_ObjectHideFlags: 0

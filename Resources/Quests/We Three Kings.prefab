@@ -49,9 +49,9 @@ MonoBehaviour:
   quest_description: 
   quest_title: We Three Kings
   time_limit: 0
-  quest_item:
+  _quest_objective:
+  - {fileID: 7293463743680511410}
   - {fileID: 8879432530753600038}
-  - {fileID: 2363026636501770943}
   - {fileID: 1161405152470463033}
   _questGiver_id: 0
 --- !u!1001 &5211305454372010765
@@ -300,6 +300,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1202123035802608090, guid: 8824dfa510a94694b9186679166ef813,
+        type: 3}
+      propertyPath: count
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6148101912247484119, guid: 8824dfa510a94694b9186679166ef813,
         type: 3}
       propertyPath: count
@@ -318,9 +323,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8473903309320641640}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2363026636501770943 stripped
+--- !u!114 &7293463743680511410 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6148101912247484119, guid: 8824dfa510a94694b9186679166ef813,
+  m_CorrespondingSourceObject: {fileID: 1202123035802608090, guid: 8824dfa510a94694b9186679166ef813,
     type: 3}
   m_PrefabInstance: {fileID: 8473903309320641640}
   m_PrefabAsset: {fileID: 0}

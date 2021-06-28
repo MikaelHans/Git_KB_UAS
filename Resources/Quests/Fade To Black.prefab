@@ -49,8 +49,8 @@ MonoBehaviour:
   quest_description: 
   quest_title: Fade To Black
   time_limit: 0
-  quest_item:
-  - {fileID: 4040281338221620015}
+  _quest_objective:
+  - {fileID: 9073989010496156706}
   - {fileID: 4458087704667631885}
   - {fileID: 8487317146779624875}
   _questGiver_id: 0
@@ -300,6 +300,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1202123035802608090, guid: 8824dfa510a94694b9186679166ef813,
+        type: 3}
+      propertyPath: count
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6148101912247484119, guid: 8824dfa510a94694b9186679166ef813,
         type: 3}
       propertyPath: count
@@ -318,9 +323,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7873282147182695928}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4040281338221620015 stripped
+--- !u!114 &9073989010496156706 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6148101912247484119, guid: 8824dfa510a94694b9186679166ef813,
+  m_CorrespondingSourceObject: {fileID: 1202123035802608090, guid: 8824dfa510a94694b9186679166ef813,
     type: 3}
   m_PrefabInstance: {fileID: 7873282147182695928}
   m_PrefabAsset: {fileID: 0}

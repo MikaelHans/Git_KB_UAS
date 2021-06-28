@@ -5,9 +5,9 @@ using UnityEngine;
 public class Gathering_Quest : Quest
 {
     [SerializeField]
-    List<Quest_Item> quest_item = new List<Quest_Item>();
+    List<Quest_Objective_Item> quest_item = new List<Quest_Objective_Item>();
 
-    public List<Quest_Item> Quest_item { get => quest_item; set => quest_item = value; }
+    public List<Quest_Objective_Item> Quest_item { get => quest_item; set => quest_item = value; }
 
     public override void check_if_complete()
     {

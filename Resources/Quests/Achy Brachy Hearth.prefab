@@ -49,8 +49,8 @@ MonoBehaviour:
   quest_description: 
   quest_title: Achy Brachy Heart
   time_limit: 0
-  quest_item:
-  - {fileID: 5753385614351412328}
+  _quest_objective:
+  - {fileID: 730884061882430309}
   - {fileID: 1111329552013911355}
   - {fileID: 4645214875753011642}
   _questGiver_id: 0
@@ -208,6 +208,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1202123035802608090, guid: 8824dfa510a94694b9186679166ef813,
+        type: 3}
+      propertyPath: count
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6148101912247484119, guid: 8824dfa510a94694b9186679166ef813,
         type: 3}
       propertyPath: count
@@ -226,9 +231,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1912432967375590079}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5753385614351412328 stripped
+--- !u!114 &730884061882430309 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6148101912247484119, guid: 8824dfa510a94694b9186679166ef813,
+  m_CorrespondingSourceObject: {fileID: 1202123035802608090, guid: 8824dfa510a94694b9186679166ef813,
     type: 3}
   m_PrefabInstance: {fileID: 1912432967375590079}
   m_PrefabAsset: {fileID: 0}

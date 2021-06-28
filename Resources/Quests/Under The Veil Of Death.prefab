@@ -28,7 +28,6 @@ Transform:
   m_LocalPosition: {x: 1.151711, y: -2.268645, z: -102.8114}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4040053231858174776}
   - {fileID: 1299400747401503691}
   - {fileID: 4022632128208179790}
   m_Father: {fileID: 0}
@@ -49,8 +48,7 @@ MonoBehaviour:
   quest_description: 
   quest_title: Under The Veil Of Death
   time_limit: 0
-  quest_item:
-  - {fileID: 7583736733342631213}
+  _quest_objective:
   - {fileID: 1299400747401503690}
   - {fileID: 4022632128208179785}
   _questGiver_id: 0
@@ -74,7 +72,7 @@ PrefabInstance:
     - target: {fileID: 2033446537667929804, guid: fb1faf2d2d3d3db47b91b43badffed58,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2033446537667929804, guid: fb1faf2d2d3d3db47b91b43badffed58,
         type: 3}
@@ -146,98 +144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 741a28b0f0de9c948a0d98e03e2d51fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &4354042396134161402
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1891923581834284162}
-    m_Modifications:
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.151711
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.268645
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -102.8114
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6148101912247484119, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: count
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 8159851861374255666, guid: 8824dfa510a94694b9186679166ef813,
-        type: 3}
-      propertyPath: m_Name
-      value: QI_Gem
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8824dfa510a94694b9186679166ef813, type: 3}
---- !u!4 &4040053231858174776 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 323570328196509890, guid: 8824dfa510a94694b9186679166ef813,
-    type: 3}
-  m_PrefabInstance: {fileID: 4354042396134161402}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7583736733342631213 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6148101912247484119, guid: 8824dfa510a94694b9186679166ef813,
-    type: 3}
-  m_PrefabInstance: {fileID: 4354042396134161402}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 741a28b0f0de9c948a0d98e03e2d51fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &8066862562034119113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -248,7 +154,7 @@ PrefabInstance:
     - target: {fileID: 9077892195738882562, guid: 1f9a8e5a938e7d14f8ba841aa45da798,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9077892195738882562, guid: 1f9a8e5a938e7d14f8ba841aa45da798,
         type: 3}

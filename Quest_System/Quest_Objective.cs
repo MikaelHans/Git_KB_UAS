@@ -5,17 +5,14 @@ using UnityEngine;
 public class Quest_Objective : MonoBehaviour
 {
     [SerializeField]
+    GameObject _objective;
+    [SerializeField]
     protected int count;
-
+    public string _name;
     public int Count { get => count; set => count = value; }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject Objective { get => _objective; set => _objective = value; }
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
         
     }

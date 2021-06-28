@@ -43,5 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 741a28b0f0de9c948a0d98e03e2d51fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: -389261323919194028, guid: a3d1c9e3bb0af7f4cbf1cc6a52fde689, type: 3}
-  count: 0
+  _objective: {fileID: 7882854689994215745, guid: a3d1c9e3bb0af7f4cbf1cc6a52fde689,
+    type: 3}
+  _name: Skull Key
