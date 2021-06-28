@@ -58,7 +58,7 @@ public class NPC_Questgiver : NPC
     {
         foreach(Quest quest in questlist)
         {
-            
+            quest.init();
         }        
     }
 

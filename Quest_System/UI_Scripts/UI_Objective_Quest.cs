@@ -25,6 +25,8 @@ public class UI_Objective_Quest : Base_UI
             {
                 _complete.enabled = true;
             }
+            //put it here to only activate listener on activated quest
+            quest_obj.init();//init listener
         }
         else
         {

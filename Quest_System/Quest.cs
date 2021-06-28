@@ -41,4 +41,5 @@ public class Quest : MonoBehaviour
     public int QuestGiver_id { get => _questGiver_id; set => _questGiver_id = value; }
     public List<Quest_Objective> Quest_objective { get => _quest_objective; set => _quest_objective = value; }
     public virtual void complete_quest() { }
+    public virtual void init() { }
 }

@@ -12,15 +12,12 @@ public class Quest_Objective : MonoBehaviour
     public int Count { get => count; set => count = value; }
     public GameObject Objective { get => _objective; set => _objective = value; }
 
-    
 
     public virtual int completed()
     {
         return 0;
     }
 
-    private void Awake()
-    {
-        
-    }
+    public virtual void init() { }
+
 }
