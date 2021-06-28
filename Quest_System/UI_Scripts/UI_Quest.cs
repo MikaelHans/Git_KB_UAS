@@ -13,18 +13,21 @@ public class UI_Quest : Base_UI
     {
         
     }
-    public override void Setup_UI(GameObject setup)
+    public override void Setup_UI(GameObject setup, bool isactive)
     {
         Quest quest = setup.GetComponent<Quest>();
         _quest_name.text = quest.name;
         _quest_desc.text = quest.Quest_description;
-        action._quest = quest;
+
+        if (action != null)//if there's action (button, etc)
+        {
+            action._quest = quest;
+        }
+
         foreach(Quest_Objective questobj in quest.Quest_objective)
         {
             GameObject elo = Instantiate(_prefab, _content.transform);
-            elo.GetComponent<UI_Objective_Quest>().Setup_UI(questobj.gameObject);
+            elo.GetComponent<UI_Objective_Quest>().Setup_UI(questobj.gameObject, isactive);
         }
     }
-
-    
 }

@@ -9,9 +9,9 @@ public class Gathering_Quest : Quest
 
     public List<Quest_Objective_Item> Quest_item { get => quest_item; set => quest_item = value; }
 
-    public override void check_if_complete()
-    {
-        base.check_if_complete();
+    //public override void check_if_complete()
+    //{
+    //    base.check_if_complete();
 
-    }
+    //}
 }

@@ -45,7 +45,4 @@ public class Quest : MonoBehaviour
     {
 
     }
-
-    public virtual void check_if_complete() { }
-
 }

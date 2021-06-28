@@ -234,17 +234,24 @@ public class Player : Game_Character, IAttackable, IAttacking
 
     public bool finish_quest()
     {
-        //if (has_active_quest == true)
-        //{
-        //    foreach (Quest item in active_quest.Quest_item)
-        //    {
-        //        player_inventory.subtract_item(item);
-        //        active_quest = null;
-        //    }
-        //    //player_active_quest_UI.setup_UI(active_quest);
-        //    Has_active_quest = false;
-        //    return true;
-        //}
+        if (has_active_quest == true)
+        {
+            //foreach (Quest item in active_quest.Quest_item)
+            //{
+            //    player_inventory.subtract_item(item);
+            //    active_quest = null;
+            //}
+            ////player_active_quest_UI.setup_UI(active_quest);
+            //Has_active_quest = false;
+            //return true;
+
+            foreach (Quest_Objective qobj in active_quest.Quest_objective)
+            {
+
+            }
+
+            return true;
+        }
         return false;
     }
 
