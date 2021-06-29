@@ -23,7 +23,7 @@ public class Enemy : Creature, IAttacking
         base.Update();        
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)// enemy in range
     {
         if (!target)
         {
@@ -36,7 +36,7 @@ public class Enemy : Creature, IAttacking
         }
     }
     //unfollow player when out of range
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)// enemy out of range
     {
         if (!target)
         {
@@ -57,6 +57,7 @@ public class Enemy : Creature, IAttacking
         container_gameobject.transform.position = new Vector3(0, 0, 0);
         container_gameobject.transform.position = random_position;
         target = container_gameobject.transform;
+        //Debug.Log("Called");
     }
 
     protected override void move()
