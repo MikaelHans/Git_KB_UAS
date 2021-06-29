@@ -97,7 +97,10 @@ public class Enemy : Creature, IAttacking
     protected override void die()
     {
         base.die();
-        FindObjectOfType<Event_Manager>().Slayed_Monster.Invoke(GetType());
+        if (FindObjectOfType<Event_Manager>() != null)
+        {
+            FindObjectOfType<Event_Manager>().Slayed_Monster.Invoke(GetType());
+        }        
         Destroy(container_gameobject);
         drop_item();        
         Destroy(gameObject);
