@@ -225,7 +225,8 @@ public class Player : Game_Character, IAttackable, IAttacking
     {
         if (has_active_quest == false)
         {
-            active_quest = accepted_quest;
+            active_quest = Instantiate(accepted_quest, transform);
+            active_quest.init();
             Has_active_quest = true;
             return true;
         }
@@ -245,6 +246,7 @@ public class Player : Game_Character, IAttackable, IAttacking
             //Has_active_quest = false;
             //return true;
 
+            //this is not inventory, jok bingung
             foreach (Quest_Objective qobj in active_quest.Quest_objective)
             {
                 if (!(qobj.completed() >= qobj.Count))
@@ -254,6 +256,7 @@ public class Player : Game_Character, IAttackable, IAttacking
             }
             active_quest.complete_quest();
             Has_active_quest = false;
+            Destroy(active_quest);
             active_quest = null;
             return true;
         }

@@ -18,6 +18,8 @@ public class Quest_Objective : MonoBehaviour
         return 0;
     }
 
+    public virtual void complete_quest() { }
+
     public virtual void init() { }
 
 }

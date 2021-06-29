@@ -28,6 +28,7 @@ public class Creature : Item_Dropper, IAttackable
         InvokeRepeating("update_path", 0f, 0.5f);
         current_point = 0;
         container_gameobject = new GameObject();
+        container_gameobject.transform.parent = transform;
     }
 
     protected virtual void update_path()

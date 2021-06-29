@@ -16,6 +16,21 @@ public class NPC_Questgiver : NPC
 
     public int Id { get => _id; set => _id = value; }
 
+    private void Awake()
+    {
+        int index = 0;
+        foreach(Quest quest in questlist)
+        {
+            Instantiate(quest, transform);
+        }
+        questlist.Clear();
+        //yitback
+        foreach (Quest quest in GetComponentsInChildren<Quest>())
+        {
+            questlist.Add(quest);
+        }
+    }
+
     public void open_quest()
     {
         if (_player.Has_active_quest == true && _player.Active_quest.QuestGiver_id == _id)
