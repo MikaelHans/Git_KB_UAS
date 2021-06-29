@@ -23,8 +23,7 @@ public class Quest_Objective_Monster : Quest_Objective
     public void add_kill_count(System.Type enemytype)
     {
         if (Objective.GetComponent<Enemy>().GetType() == enemytype)
-        {
-            
+        {            
             _slayed_count++;
         }
     }
