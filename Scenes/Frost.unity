@@ -1170,7 +1170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13844.877, y: 17712.566}
+  m_AnchoredPosition: {x: -13868.515, y: 17688.969}
   m_SizeDelta: {x: 100, y: 199.67609}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &228778043
@@ -2105,11 +2105,6 @@ PrefabInstance:
         type: 3}
       propertyPath: _buildup_trigger
       value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 3883868937432163842, guid: ca3177d24036d654f84b3e0261f381c8,
-        type: 3}
-      propertyPath: summoned_enemy_onlowhp
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7082061856768020979, guid: ca3177d24036d654f84b3e0261f381c8,
         type: 3}
@@ -3285,7 +3280,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13878.453, y: 17690.955}
+  m_AnchoredPosition: {x: -13902.091, y: 17667.357}
   m_SizeDelta: {x: 100, y: 199.67609}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &478329995
@@ -6633,7 +6628,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -28672.705, y: -23693.756}
+  m_AnchoredPosition: {x: -28721.527, y: -23819.29}
   m_SizeDelta: {x: 184.32, y: 682.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &821624341

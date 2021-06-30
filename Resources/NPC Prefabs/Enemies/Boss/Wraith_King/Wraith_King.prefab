@@ -118,11 +118,11 @@ MonoBehaviour:
   random_movement_radius: 10
   target: {fileID: 0}
   next_waypoint_trigger: 0.3
+  is_targeting_player: 0
   stop_time: 3
   stop_window: 0
   charge_force: 40
   in_range: 0
-  _bullet: {fileID: 0}
   _closeattack_range: 1.6
   _closeattack_window: 0
   _closeattack_rate: 3
@@ -132,7 +132,12 @@ MonoBehaviour:
   _charge_window: 0
   _charge_active_time: 3
   _charge_speed: 10
-  summoned_enemy_onlowhp: 8
+  _retreat_speed: 0
+  _healing_rate: 0
+  _healing_limit: 0
+  summoned_enemy_onlowhp: 10
+  is_retreating: 0
+  _is_healing: 0
 --- !u!114 &7366347048259669860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +176,8 @@ MonoBehaviour:
   _rage_window: 0
   _attack_modifier: 0
   _speed_modifier: 0
+  _init_damage: 0
+  _init_speed: 0
 --- !u!95 &8574321769113078146
 Animator:
   serializedVersion: 3
