@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _move_speed: 3
-  _hp: 10000
+  _hp: 130
   attack_rate: 5
   attack_window: 0
   _defense: 0
@@ -132,6 +132,7 @@ MonoBehaviour:
   _charge_window: 0
   _charge_active_time: 3
   _charge_speed: 10
+  summoned_enemy_onlowhp: 8
 --- !u!114 &7366347048259669860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,8 +145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a04eea84552e449891855f9f8d2a0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _summon_buildup: 0
-  _summon_limit: 120
+  _buildup: 0
+  _buildup_trigger: 0
+  reset_onAction: 0
   _summoned_enemy_prefab: {fileID: 2789264401661155272, guid: 0afd12c286d6bdd4c9f328593c714bc2,
     type: 3}
   _number_of_summoned_enemy: 5
@@ -161,6 +163,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0987c4183264a044abfec522eda37d4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _buildup: 0
+  _buildup_trigger: 0
+  reset_onAction: 0
+  _in_rage: 0
+  _rage_time: 0
+  _rage_window: 0
+  _attack_modifier: 0
+  _speed_modifier: 0
 --- !u!95 &8574321769113078146
 Animator:
   serializedVersion: 3

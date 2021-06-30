@@ -41,10 +41,35 @@ public class Game_Character : MonoBehaviour
     {
         return _hp;
     }
+    public float Get_Damage()
+    {
+        return _damage;
+    }
+
+    public float Get_Force()
+    {
+        return force;
+    }
+    public float Get_Speed()
+    {
+        return _move_speed;
+    }
 
     public void set_hp(float hp)
     {
         _hp = hp;
+    }
+    public void set_damage(float hp)
+    {
+        _damage = hp;
+    }
+    public void set_force(float hp)
+    {
+        force = hp;
+    }
+    public void set_speed(float hp)
+    {
+        _move_speed = hp;
     }
 
     protected virtual void move()
