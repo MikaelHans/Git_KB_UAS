@@ -6,6 +6,7 @@ using Pathfinding;
 
 public class Enemy : Creature, IAttacking
 {
+    [SerializeField]
     protected bool is_targeting_player;
     [SerializeField]
     protected float stop_time = 3, stop_window = 0;
@@ -23,7 +24,7 @@ public class Enemy : Creature, IAttacking
         base.Update();        
     }
 
-    private void OnTriggerStay2D(Collider2D collision)// enemy in range
+    protected virtual void OnTriggerStay2D(Collider2D collision)// enemy in range
     {
         if (!target)
         {
@@ -36,10 +37,11 @@ public class Enemy : Creature, IAttacking
         }
     }
     //unfollow player when out of range
-    private void OnTriggerExit2D(Collider2D collision)// enemy out of range
+    protected virtual void OnTriggerExit2D(Collider2D collision)// enemy out of range
     {
         if (!target)
         {
+            is_targeting_player = false;
             return;
         }
         else if (collision.gameObject == target.gameObject)
@@ -50,7 +52,7 @@ public class Enemy : Creature, IAttacking
         }
     }
 
-    void choose_random_spot()
+    protected virtual void choose_random_spot()
     {
         Vector3 random_position = (Vector3)Random.insideUnitCircle * random_movement_radius;
         random_position += transform.position;
