@@ -32,20 +32,52 @@ public class NPC_Questgiver : NPC
         }
     }
 
-    
-
-    public void open_quest()
+    public override void interact(Player player)
     {
-        if (_player.Has_active_quest == true && _player.Active_quest.QuestGiver_id == _id)
+        //dialogue
+        _player = player;
+        if (can_open())
         {
-            quest_opener = _player;
-            open_active_quest_list();
+            dialogue_UI_Script.display_UI(this);
         }
         else
         {
-            quest_opener = _player;
-            open_npc_quest_list();
+            dialogue_UI_Script.display_UI(this, 2);
         }
+    }
+
+
+    public bool can_open()
+    {
+        if (_player._hunter_rank >= _id)
+        {           
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public bool open_quest()
+    {
+        if (_player._hunter_rank >= _id)
+        {
+            if (_player.Has_active_quest == true && _player.Active_quest.QuestGiver_id == _id)
+            {
+                quest_opener = _player;
+                open_active_quest_list();
+            }
+            else
+            {
+                quest_opener = _player;
+                open_npc_quest_list();
+            }
+            return true;
+        }
+        else
+        {
+            return false;
+        }        
     }
 
     protected override void Start()

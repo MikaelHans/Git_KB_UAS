@@ -40,6 +40,8 @@ public class Player : Game_Character, IAttackable, IAttacking
     public int _hunter_rank;
     public float _upgrade_point;
 
+    public string _last_area;
+
     public bool Has_active_quest { get => has_active_quest; set => has_active_quest = value; }
     public Quest Active_quest { get => active_quest; set => active_quest = value; }
     public float Regen_rate { get => _regen_rate; set => _regen_rate = value; }
@@ -271,6 +273,7 @@ public class Player : Game_Character, IAttackable, IAttacking
                     return false;
                 }
             }
+            add_point(active_quest._reward_points);
             active_quest.complete_quest();
             Has_active_quest = false;
             Destroy(active_quest);

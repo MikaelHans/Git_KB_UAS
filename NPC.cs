@@ -53,7 +53,7 @@ public class NPC : MonoBehaviour, Interactables
     {
         //dialogue
         _player = player;
-        dialogue_UI_Script.display_UI(gameObject);
+        dialogue_UI_Script.display_UI(this);
     }
 
     private void Update()

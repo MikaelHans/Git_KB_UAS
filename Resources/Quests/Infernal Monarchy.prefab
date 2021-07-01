@@ -54,6 +54,7 @@ MonoBehaviour:
   - {fileID: 5343020476532987169}
   - {fileID: 8901500219488831053}
   _questGiver_id: 0
+  _reward_points: 2
 --- !u!1001 &464818074151752782
 PrefabInstance:
   m_ObjectHideFlags: 0
