@@ -12,6 +12,10 @@ public class Enemy : Creature, IAttacking
     protected float stop_time = 3, stop_window = 0;
     [SerializeField]
     //follow player
+    protected IAttackable _attacked_object_stored;
+    protected Vector2 _stored_knockback_force;
+    protected float _stored_damage;
+
 
     protected override void Start()
     {
@@ -111,5 +115,17 @@ public class Enemy : Creature, IAttacking
     public virtual void attack(IAttackable attacked_object, Vector2 knockback_force, float damage)
     {
         //throw new System.NotImplementedException();
+    }
+
+    public virtual void attack_after_anim()
+    {
+        attack(_attacked_object_stored, _stored_knockback_force, _stored_damage);
+    }
+
+    protected void store_atk_info(IAttackable attacked_object, Vector2 knockback_force, float damage)
+    {
+        _attacked_object_stored = attacked_object;
+        _stored_knockback_force = knockback_force;
+        _stored_damage = damage;
     }
 }

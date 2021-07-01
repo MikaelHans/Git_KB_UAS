@@ -12,10 +12,11 @@ public class Game_Character : MonoBehaviour
     protected float _defense, _damage, force, _attack_range;
     [SerializeField]
     protected Rigidbody2D ai_rigidbody;
+    protected SpriteRenderer _sprtrenderer;
 
     protected virtual void Awake()
     {
-        
+        _sprtrenderer = GetComponent<SpriteRenderer>();
     }
     // Start is called before the first frame update
     protected virtual void Start()
