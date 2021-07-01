@@ -6540,7 +6540,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -28017.307, y: 47508.953}
+  m_AnchoredPosition: {x: -28293.605, y: 47727.465}
   m_SizeDelta: {x: 100, y: 199.67609}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &933896241
@@ -9776,6 +9776,7 @@ MonoBehaviour:
   _health: {fileID: 1514390366}
   _attack: {fileID: 1514451652}
   _regen: {fileID: 680796861}
+  _upgrade: {fileID: 126443444}
 --- !u!1 &1381374155
 GameObject:
   m_ObjectHideFlags: 0
@@ -10798,7 +10799,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -57964.137, y: -29663.541}
+  m_AnchoredPosition: {x: -58535.254, y: -30263.303}
   m_SizeDelta: {x: 184.32, y: 682.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1485419471
@@ -12469,8 +12470,10 @@ MonoBehaviour:
   playerName: {fileID: 0}
   player_inventory: {fileID: 0}
   active_quest: {fileID: 0}
+  _hunter_ui: {fileID: 1754162996}
+  _upgrade_ui: {fileID: 1355183743}
   _hunter_rank: 1
-  _upgrade_point: 0
+  _upgrade_point: 7
 --- !u!61 &1723345169
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13636,7 +13639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -28050.875, y: 47487.348}
+  m_AnchoredPosition: {x: -28327.174, y: 47705.86}
   m_SizeDelta: {x: 100, y: 199.67609}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1846565074

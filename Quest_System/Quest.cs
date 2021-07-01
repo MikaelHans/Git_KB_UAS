@@ -13,6 +13,7 @@ public class Quest : MonoBehaviour
     List<Quest_Objective> _quest_objective = new List<Quest_Objective>();
     [SerializeField]
     int _questGiver_id;
+    public float _reward_point;
 
     public Quest(int questgiver_id, Quest_Objective_Item quest_item, string quest_description= "Not Set", string quest_title="Not Set", float time_limit = 0f)
     {

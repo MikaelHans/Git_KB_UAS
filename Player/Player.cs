@@ -34,7 +34,8 @@ public class Player : Game_Character, IAttackable, IAttacking
     [SerializeField]
     Quest active_quest;
 
-    Hunter_UI _hunter_ui;
+    public Hunter_UI _hunter_ui;
+    public Upgrade_UI _upgrade_ui;
 
     public int _hunter_rank;
     public float _upgrade_point;
@@ -68,6 +69,7 @@ public class Player : Game_Character, IAttackable, IAttacking
         base.Start();
         player_inventory = FindObjectOfType<Inventory>();
         _hp = _max_hp;
+        _upgrade_ui.Sync_Up(_upgrade_point);
     }
 
     protected override void Update()
@@ -288,20 +290,27 @@ public class Player : Game_Character, IAttackable, IAttacking
         _total_point += point;
         _upgrade_point += point;
         _hunter_rank = (int)_total_point / 10;
+        _upgrade_ui.Sync_Up(_upgrade_point);
     }
 
     public void add_max_health(float point)
     {
         Max_hp += point;
+        _upgrade_point--;
+        _upgrade_ui.Sync_Up(_upgrade_point);
     }
 
     public void add_damage(float point)
     {
         _damage += point;
+        _upgrade_point--;
+        _upgrade_ui.Sync_Up(_upgrade_point);
     }
 
     public void add_regen(float point)
     {
         _regen_rate += point;
+        _upgrade_point--;
+        _upgrade_ui.Sync_Up(_upgrade_point);
     }
 }
