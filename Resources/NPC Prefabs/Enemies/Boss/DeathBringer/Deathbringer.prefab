@@ -34,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 2300272962990487462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 18.1, y: 7.04, z: -1}
-  m_LocalScale: {x: 2.9999998, y: 3, z: 1}
+  m_LocalScale: {x: -3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Sprite: {fileID: -750047184722822154, guid: ef8c2686686039540a01073064f37097,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.15625, y: 0.859375}
@@ -121,6 +121,9 @@ MonoBehaviour:
   is_targeting_player: 0
   stop_time: 3
   stop_window: 0
+  _center_offset: -1.7
+  is_retreating: 0
+  _is_healing: 0
   invisible_force: 5
   in_range: 0
   _closeattack_range: 2
@@ -136,8 +139,6 @@ MonoBehaviour:
   _healing_limit: 70
   summoned_enemy_onlowhp: 8
   _skill_summon: 4
-  is_retreating: 0
-  _is_healing: 0
   _is_invisible: 0
 --- !u!114 &1990092074195102007
 MonoBehaviour:

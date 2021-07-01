@@ -104,7 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _move_speed: 3
   _hp: 130
-  attack_rate: 5
+  attack_rate: 7
   attack_window: 0
   _defense: 0
   _damage: 100
@@ -123,11 +123,13 @@ MonoBehaviour:
   stop_time: 3
   stop_window: 0
   _center_offset: 0
+  is_retreating: 0
+  _is_healing: 0
   charge_force: 40
   in_range: 0
   _closeattack_range: 1.6
   _closeattack_window: 0
-  _closeattack_rate: 3
+  _closeattack_rate: 5
   _closeattack_force: 1500
   _closeattack_damage: 50
   _chargeattack_rate: 15
@@ -138,8 +140,6 @@ MonoBehaviour:
   _healing_rate: 0.1
   _healing_limit: 60
   summoned_enemy_onlowhp: 10
-  is_retreating: 0
-  _is_healing: 0
 --- !u!114 &7366347048259669860
 MonoBehaviour:
   m_ObjectHideFlags: 0

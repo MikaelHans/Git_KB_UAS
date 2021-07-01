@@ -34,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 9139908285397925334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 49.4, y: -4.97, z: -1}
-  m_LocalScale: {x: 2.9999998, y: 3, z: 1}
+  m_LocalScale: {x: 6.1529813, y: 5.9767265, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -104,14 +104,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _move_speed: 3
   _hp: 130
-  attack_rate: 5
+  attack_rate: 7
   attack_window: 0
   _defense: 0
   _damage: 40
   force: 1200
   _attack_range: 3
   ai_rigidbody: {fileID: 0}
-  item_to_drop: {fileID: 0}
+  item_to_drop: {fileID: 6434132078260231591, guid: 571e713ab460541449cdefb99b683ef3,
+    type: 3}
   defense: 0
   path_seeker: {fileID: 0}
   direction: {x: 0, y: 0}
@@ -121,9 +122,12 @@ MonoBehaviour:
   is_targeting_player: 0
   stop_time: 3
   stop_window: 0
+  _center_offset: 0
+  is_retreating: 0
+  _is_healing: 0
   charge_force: 5
   in_range: 0
-  _closeattack_range: 1.6
+  _closeattack_range: 4
   _closeattack_window: 0
   _closeattack_rate: 3
   _closeattack_force: 1500
@@ -137,9 +141,6 @@ MonoBehaviour:
   _healing_limit: 70
   summoned_enemy_onlowhp: 8
   _invincible_summon: 5
-  is_retreating: 0
-  _is_healing: 0
-  _has_summoned_when_invicible: 0
 --- !u!114 &8837599625264849735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +191,7 @@ Animator:
   m_GameObject: {fileID: 9139908285397925334}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7b43e4d529f2ee44b9cb59e6dfa4da3e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6d796120f39c77f43b218607e298e050, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

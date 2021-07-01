@@ -24,6 +24,7 @@ public class Wraith_King : Boss
      */
     protected override void Update()
     {
+        base.Update();
         //Debug.Log(gameObject.GetComponent<Rigidbody2D>().velocity.magnitude);
         if (is_retreating == true)
         {
@@ -105,7 +106,7 @@ public class Wraith_King : Boss
                 }
             }            
         }
-        base.Update();
+        
     }
 
     protected override void Awake()
@@ -132,18 +133,19 @@ public class Wraith_King : Boss
         }
     }
 
-    protected override void OnTriggerStay2D(Collider2D collision)// enemy in range
-    {
-        if (!target)
-        {
-            return;
-        }
-        else if ((target.gameObject == container_gameobject.gameObject || target == null) && collision.gameObject.GetComponent<Player>() && !is_retreating)
-        {
-            target = collision.gameObject.GetComponent<Transform>();
-            is_targeting_player = true;
-        }
-    }
+    //protected override void OnTriggerStay2D(Collider2D collision)// enemy in range
+    //{
+    //    if (!target)
+    //    {
+    //        return;
+    //    }
+    //    else if ((target.gameObject == container_gameobject.gameObject || target == null) 
+    //        && collision.gameObject.GetComponent<Player>() && !is_retreating)
+    //    {
+    //        target = collision.gameObject.GetComponent<Transform>();
+    //        is_targeting_player = true;
+    //    }
+    //}
     //unfollow player when out of range
     protected override void OnTriggerExit2D(Collider2D collision)// enemy out of range
     {
@@ -165,7 +167,7 @@ public class Wraith_King : Boss
         attacked_object.take_damage(damage, knockback_force);
     }
 
-    int check_attack_readiness()
+    protected int check_attack_readiness()
     {
         int ret = 0;
         if (attack_window <= Time.time)// cek apakah charge attack sudah siap

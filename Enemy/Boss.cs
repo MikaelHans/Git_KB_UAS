@@ -49,12 +49,16 @@ public class Boss : Enemy
     }
 
     protected override void die()
-    {
+    {        
         anim.SetTrigger("ded");
     }
 
     public virtual void die_after_anim()
     {
+        if (FindObjectOfType<Event_Manager>() != null)
+        {
+            FindObjectOfType<Event_Manager>().Slayed_Monster.Invoke(GetType());
+        }
         Destroy(container_gameobject);
         drop_item();
         Destroy(gameObject);

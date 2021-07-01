@@ -21,7 +21,8 @@ public class NPC_Questgiver : NPC
         int index = 0;
         foreach(Quest quest in questlist)
         {
-            Instantiate(quest, transform);
+            Quest elo = Instantiate(quest, transform);
+            elo.QuestGiver_id = _id;
         }
         questlist.Clear();
         //yitback
@@ -30,6 +31,8 @@ public class NPC_Questgiver : NPC
             questlist.Add(quest);
         }
     }
+
+    
 
     public void open_quest()
     {
@@ -55,6 +58,14 @@ public class NPC_Questgiver : NPC
         {
             quest.QuestGiver_id = _id;
         }
+        //Player player = FindObjectOfType<Player>();
+        //if (player.Has_active_quest)
+        //{
+        //    if(player.Active_quest.QuestGiver_id == _id)
+        //    {
+        //        quest_opener = player;
+        //    }
+        //}
     }
 
     void open_npc_quest_list()
