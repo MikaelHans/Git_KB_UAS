@@ -20,7 +20,7 @@ public class Player : Game_Character, IAttackable, IAttacking
     [SerializeField]
     public int direction;
     [SerializeField]
-    private float interact_range, _total_point, _regen_rate;
+    private float interact_range, _total_point, _regen_rate, _max_hp;
     [SerializeField]
     private float offset_x, offset_y, points;
     [SerializeField]
@@ -41,6 +41,8 @@ public class Player : Game_Character, IAttackable, IAttacking
 
     public bool Has_active_quest { get => has_active_quest; set => has_active_quest = value; }
     public Quest Active_quest { get => active_quest; set => active_quest = value; }
+    public float Regen_rate { get => _regen_rate; set => _regen_rate = value; }
+    public float Max_hp { get => _max_hp; set => _max_hp = value; }
 
     #endregion
     protected override void Awake()
@@ -65,6 +67,7 @@ public class Player : Game_Character, IAttackable, IAttacking
     {
         base.Start();
         player_inventory = FindObjectOfType<Inventory>();
+        _hp = _max_hp;
     }
 
     protected override void Update()
@@ -72,6 +75,14 @@ public class Player : Game_Character, IAttackable, IAttacking
         base.Update();
         get_input();
         SyncAnimation(horizontal_state, vertical_state);
+        if(_hp < _max_hp)
+        {
+            _hp += _regen_rate;
+        }
+        else if (_hp > _max_hp)
+        {
+            _hp = _max_hp;
+        }
     }
 
     protected override void FixedUpdate()
@@ -281,7 +292,7 @@ public class Player : Game_Character, IAttackable, IAttacking
 
     public void add_max_health(float point)
     {
-        _hp = point;
+        Max_hp += point;
     }
 
     public void add_damage(float point)
