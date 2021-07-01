@@ -5,17 +5,23 @@ using UnityEngine;
 public class Boss : Enemy
 {
     protected Animator anim;
+    public float _center_offset;
+    [SerializeField]
+    protected bool is_retreating, _is_healing;
 
     protected override void Update()
     {
         base.Update();
-        if(transform.position.x < target.position.x)
+        if(target != null)
         {
-            _sprtrenderer.flipX = false;
-        }
-        else if (transform.position.x > target.position.x)
-        {
-            _sprtrenderer.flipX = true;
+            if (transform.position.x + _center_offset < target.position.x)
+            {
+                _sprtrenderer.flipX = false;
+            }
+            else if (transform.position.x - _center_offset > target.position.x)
+            {
+                _sprtrenderer.flipX = true;
+            }
         }
     }
 
@@ -52,5 +58,10 @@ public class Boss : Enemy
         Destroy(container_gameobject);
         drop_item();
         Destroy(gameObject);
+    }
+
+    public virtual void skill_after_anim()
+    {
+
     }
 }

@@ -15,8 +15,7 @@ public class Wraith_King : Boss
     float _initial_speed, _initial_HP;
     public int summoned_enemy_onlowhp = 8;
     bool has_summoned_lowhp, _is_charging;
-    [SerializeField]
-    bool is_retreating, _is_healing;
+
     Summoner summon;
     Rage rage;
     /*
@@ -68,10 +67,11 @@ public class Wraith_King : Boss
                             _move_speed = _charge_speed;
                             float temp = Time.time + _chargeattack_rate;
                             attack_window = temp;
+                            anim.SetBool("charging", _is_charging);
                         }
                     }
                     //closerange attack
-                    else if (_closeattack_window <= Time.time && _charge_window < Time.time)
+                    else if (_closeattack_window <= Time.time && _charge_window < Time.time && !is_retreating)
                     {
                         //if in range of close attack and within attack window
                         if (range_between_object_and_target <= _closeattack_range)
@@ -82,7 +82,12 @@ public class Wraith_King : Boss
                             IAttackable player = target.GetComponent<IAttackable>();
                             Vector2 dir = ((enemypos - current_pos));
                             Vector2 knockback_force = dir.normalized * _closeattack_force;//supaya lebih rendah efek charge dan close
-                            attack(player, knockback_force, _closeattack_damage);
+                            /*
+                             * attack diganti ke state supaya lebih apik anim e
+                             */
+                            anim.SetTrigger("attack");
+                            store_atk_info(player, knockback_force, _closeattack_damage);
+                            
                             Debug.Log("Close Hit");
                         }
                     }
@@ -95,6 +100,7 @@ public class Wraith_King : Boss
                     {
                         _move_speed = _initial_speed;
                         _is_charging = false;
+                        anim.SetBool("charging", _is_charging);
                     }
                 }
             }            

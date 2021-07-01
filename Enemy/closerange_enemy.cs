@@ -16,20 +16,23 @@ public class closerange_enemy : Enemy
         {
             // attack player            
             //charge towards targeted player
-            Vector2 cur_pos = transform.position;
-            Vector2 target_pos = target.position;
-            float distance = Vector2.Distance(cur_pos, target_pos);
-            in_range = true;
-            if (Time.time >= attack_window && distance <= _attack_range)
-            {              
-                float temp = Time.time + stop_time;
-                attack_window = temp;
-                stop_window = temp;
+            if(target != null)
+            {
+                Vector2 cur_pos = transform.position;
+                Vector2 target_pos = target.position;
+                float distance = Vector2.Distance(cur_pos, target_pos);
+                in_range = true;
+                if (Time.time >= attack_window && distance <= _attack_range)
+                {
+                    float temp = Time.time + stop_time;
+                    attack_window = temp;
+                    stop_window = temp;
 
-                IAttackable player = target.GetComponent<IAttackable>();
-                Vector2 dir = ((target_pos - cur_pos));
-                Vector2 knockback_force = dir * force;
-                attack(player, knockback_force, _damage);
+                    IAttackable player = target.GetComponent<IAttackable>();
+                    Vector2 dir = ((target_pos - cur_pos));
+                    Vector2 knockback_force = dir * force;
+                    attack(player, knockback_force, _damage);
+                }
             }
         }
         else
@@ -119,10 +122,13 @@ public class closerange_enemy : Enemy
     public override void attack(IAttackable attacked_object, Vector2 knockback_force, float damage)
     {
         setDir(target.position);
-        base.attack(attacked_object, knockback_force, damage);
-        attacked_object.take_damage(damage, knockback_force);
-        anim.SetTrigger("attack");
-        Debug.Log("attack");
+        if (attacked_object != null)
+        {
+            base.attack(attacked_object, knockback_force, damage);
+            attacked_object.take_damage(damage, knockback_force);
+            anim.SetTrigger("attack");
+            Debug.Log("attack");
+        }        
     }
     public override void take_damage(float _damage, Vector2 force)
     {

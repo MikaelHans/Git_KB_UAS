@@ -111,7 +111,8 @@ MonoBehaviour:
   force: 900
   _attack_range: 10
   ai_rigidbody: {fileID: 0}
-  item_to_drop: {fileID: 0}
+  item_to_drop: {fileID: -8264880745855325795, guid: 71a9749d19924304880e7f7f9fc1e2e0,
+    type: 3}
   defense: 0
   path_seeker: {fileID: 0}
   direction: {x: 0, y: 0}
@@ -121,6 +122,7 @@ MonoBehaviour:
   is_targeting_player: 0
   stop_time: 3
   stop_window: 0
+  _center_offset: 0
   charge_force: 40
   in_range: 0
   _closeattack_range: 1.6
@@ -132,9 +134,9 @@ MonoBehaviour:
   _charge_window: 0
   _charge_active_time: 3
   _charge_speed: 10
-  _retreat_speed: 0
-  _healing_rate: 0
-  _healing_limit: 0
+  _retreat_speed: 10
+  _healing_rate: 0.1
+  _healing_limit: 60
   summoned_enemy_onlowhp: 10
   is_retreating: 0
   _is_healing: 0
@@ -151,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _buildup: 0
-  _buildup_trigger: 0
-  reset_onAction: 0
+  _buildup_trigger: 120
+  reset_onAction: 1
   _summoned_enemy_prefab: {fileID: 2789264401661155272, guid: 0afd12c286d6bdd4c9f328593c714bc2,
     type: 3}
   _number_of_summoned_enemy: 5
@@ -169,13 +171,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _buildup: 0
-  _buildup_trigger: 0
-  reset_onAction: 0
+  _buildup_trigger: 40
+  reset_onAction: 1
   _in_rage: 0
-  _rage_time: 0
+  _rage_time: 8
   _rage_window: 0
-  _attack_modifier: 0
-  _speed_modifier: 0
+  _attack_modifier: 10
+  _speed_modifier: 5
   _init_damage: 0
   _init_speed: 0
 --- !u!95 &8574321769113078146
@@ -188,7 +190,7 @@ Animator:
   m_GameObject: {fileID: 7082061856768020981}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c7ea39b18d192ed4b9018e9233c47925, type: 2}
+  m_Controller: {fileID: 9100000, guid: d9b8027bc7380104c8d066f975b70022, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

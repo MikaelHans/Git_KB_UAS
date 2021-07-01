@@ -15,8 +15,7 @@ public class Golem : Boss
     float _initial_speed, _initial_HP;
     public int summoned_enemy_onlowhp = 8, _invincible_summon;
     bool has_summoned_lowhp, _is_invincible;
-    [SerializeField]
-    bool is_retreating, _is_healing, _has_summoned_when_invicible;
+    
     Summoner summon;
     Rage rage;
     /*
@@ -65,7 +64,6 @@ public class Golem : Boss
                              */
                             _is_invincible = true;
                             anim.SetBool("skill_active", _is_invincible);
-                            _has_summoned_when_invicible = false;
                             _invincible_window = Time.time + _invincible_active_time;
                             _move_speed = _invincible_speed;
                             float temp = Time.time + _invincible_rate;

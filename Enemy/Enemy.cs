@@ -79,7 +79,10 @@ public class Enemy : Creature, IAttacking
             return;
         }
 
-        direction = ((Vector2)path.vectorPath[current_point] - ai_rigidbody.position).normalized;
+        if (current_point < path.vectorPath.Count)
+        {
+            direction = ((Vector2)path.vectorPath[current_point] - ai_rigidbody.position).normalized;
+        }
         Vector3 targetVelocity = direction * _move_speed * Time.deltaTime;
         gameObject.transform.position += targetVelocity;
 
