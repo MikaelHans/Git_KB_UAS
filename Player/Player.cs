@@ -20,7 +20,7 @@ public class Player : Game_Character, IAttackable, IAttacking
     [SerializeField]
     public int direction;
     [SerializeField]
-    private float interact_range;
+    private float interact_range, _total_point, _regen_rate;
     [SerializeField]
     private float offset_x, offset_y, points;
     [SerializeField]
@@ -33,7 +33,11 @@ public class Player : Game_Character, IAttackable, IAttacking
     private Inventory player_inventory = new Inventory();
     [SerializeField]
     Quest active_quest;
-    
+
+    Hunter_UI _hunter_ui;
+
+    public int _hunter_rank;
+    public float _upgrade_point;
 
     public bool Has_active_quest { get => has_active_quest; set => has_active_quest = value; }
     public Quest Active_quest { get => active_quest; set => active_quest = value; }
@@ -266,5 +270,27 @@ public class Player : Game_Character, IAttackable, IAttacking
     public Inventory get_inventory()
     {
         return player_inventory;
+    }
+
+    public void add_point(float point)
+    {
+        _total_point += point;
+        _upgrade_point += point;
+        _hunter_rank = (int)_total_point / 10;
+    }
+
+    public void add_max_health(float point)
+    {
+        _hp = point;
+    }
+
+    public void add_damage(float point)
+    {
+        _damage += point;
+    }
+
+    public void add_regen(float point)
+    {
+        _regen_rate += point;
     }
 }
