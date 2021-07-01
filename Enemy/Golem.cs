@@ -64,6 +64,7 @@ public class Golem : Boss
                              * INVINCIBLE
                              */
                             _is_invincible = true;
+                            anim.SetBool("skill_active", _is_invincible);
                             _has_summoned_when_invicible = false;
                             _invincible_window = Time.time + _invincible_active_time;
                             _move_speed = _invincible_speed;
@@ -73,7 +74,7 @@ public class Golem : Boss
                         }
                     }
                     //closerange attack
-                    else if (_closeattack_window <= Time.time && _invincible_window < Time.time)
+                    if (_closeattack_window <= Time.time && _invincible_window < Time.time)
                     {
                         //if in range of close attack and within attack window
                         if (range_between_object_and_target <= _closeattack_range)
@@ -81,10 +82,15 @@ public class Golem : Boss
                             float temp = Time.time + _closeattack_rate;
                             _closeattack_window = temp;
 
+                            anim.SetTrigger("attack");
                             IAttackable player = target.GetComponent<IAttackable>();
                             Vector2 dir = ((enemypos - current_pos));
                             Vector2 knockback_force = dir.normalized * _closeattack_force;//supaya lebih rendah efek charge dan close
-                            attack(player, knockback_force, _closeattack_damage);
+                            /*
+                             * attack diganti ke state supaya lebih apik anim e
+                             */
+                            anim.SetTrigger("attack");
+                            store_atk_info(player, knockback_force, _closeattack_damage);
                             Debug.Log("Close Hit");
                         }
                     }                    
@@ -92,13 +98,13 @@ public class Golem : Boss
                     {
                         _move_speed = _initial_speed;
                         _is_invincible = false;
+                        anim.SetBool("skill_active", _is_invincible);
                     }
                 }
             }
         }
         base.Update();
     }
-
     protected override void Awake()
     {
         base.Awake();
@@ -196,7 +202,9 @@ public class Golem : Boss
         }
         else
         {
-            base.take_damage(_damage, force);
+            gameObject.GetComponent<Rigidbody2D>().AddForce(force, ForceMode2D.Impulse);
+            _hp -= _damage;
+
             summon.add_buildup(_damage);
             rage.add_buildup(_damage);
             if (_is_healing)
@@ -227,7 +235,6 @@ public class Golem : Boss
             _move_speed = _initial_speed;
         }
     }
-
     //private void OnDrawGizmos()
     //{
     //    UnityEditor.Handles.color = Color.red;
