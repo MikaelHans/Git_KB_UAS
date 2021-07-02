@@ -103,11 +103,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _move_speed: 3
-  _hp: 130
+  _hp: 1200
   attack_rate: 7
   attack_window: 0
   _defense: 0
-  _damage: 40
+  _damage: 80
   force: 1200
   _attack_range: 3
   ai_rigidbody: {fileID: 0}
@@ -131,14 +131,14 @@ MonoBehaviour:
   _closeattack_window: 0
   _closeattack_rate: 3
   _closeattack_force: 1500
-  _closeattack_damage: 20
+  _closeattack_damage: 80
   _invincible_rate: 15
   _invincible_window: 0
   _invincible_active_time: 7
   _invincible_speed: 1
   _retreat_speed: 8
-  _healing_rate: 0.1
-  _healing_limit: 70
+  _healing_rate: 0.5
+  _healing_limit: 300
   summoned_enemy_onlowhp: 8
   _invincible_summon: 5
 --- !u!114 &8837599625264849735

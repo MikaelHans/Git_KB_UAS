@@ -8,11 +8,20 @@ public class Boss : Enemy
     public float _center_offset;
     [SerializeField]
     protected bool is_retreating, _is_healing;
+    public AudioSource _music;
 
     protected override void Update()
     {
         base.Update();
-        if(target != null)
+        if (is_targeting_player && !_music.isPlaying)
+        {
+            _music.Play();
+        }
+        else if (!is_targeting_player && _music.isPlaying)
+        {
+            _music.Stop();
+        }
+        if (target != null)
         {
             if (transform.position.x + _center_offset < target.position.x)
             {

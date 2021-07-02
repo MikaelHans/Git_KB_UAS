@@ -292,7 +292,7 @@ public class Player : Game_Character, IAttackable, IAttacking
     {
         _total_point += point;
         _upgrade_point += point;
-        _hunter_rank = (int)_total_point / 10;
+        _hunter_rank = (int)_total_point / 50;
         _upgrade_ui.Sync_Up(_upgrade_point);
     }
 
@@ -315,5 +315,24 @@ public class Player : Game_Character, IAttackable, IAttacking
         _regen_rate += point;
         _upgrade_point--;
         _upgrade_ui.Sync_Up(_upgrade_point);
+    }
+
+    protected override void die()
+    {
+        if(_max_hp > 60)
+        {
+            _max_hp -= 10;
+        }
+        if(_damage > 15)
+        {
+            _damage -= 5;
+        }
+        if(_regen_rate > 0.02)
+        {
+            _regen_rate -= 0.01f;
+        }
+        _hp = _max_hp;
+        _last_area = null;
+        SceneManager.LoadScene("Town");
     }
 }

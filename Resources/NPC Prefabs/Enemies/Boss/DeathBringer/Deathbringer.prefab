@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _move_speed: 4
-  _hp: 150
+  _hp: 2000
   attack_rate: 15
   attack_window: 0
   _defense: 0
@@ -130,13 +130,13 @@ MonoBehaviour:
   _closeattack_window: 0
   _closeattack_rate: 3
   _closeattack_force: 1200
-  _closeattack_damage: 60
+  _closeattack_damage: 150
   _invisibleattack_rate: 20
   _invisible_active_time: 0
   _invisible_speed: 10
   _retreat_speed: 10
-  _healing_rate: 0.1
-  _healing_limit: 70
+  _healing_rate: 0.5
+  _healing_limit: 800
   summoned_enemy_onlowhp: 8
   _skill_summon: 4
   _is_invisible: 0
