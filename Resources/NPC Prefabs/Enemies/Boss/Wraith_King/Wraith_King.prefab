@@ -126,6 +126,7 @@ MonoBehaviour:
   _center_offset: 0
   is_retreating: 0
   _is_healing: 0
+  _music: {fileID: 6011948478320540253}
   charge_force: 40
   in_range: 0
   _closeattack_range: 1.6
@@ -141,7 +142,6 @@ MonoBehaviour:
   _healing_rate: 1
   _healing_limit: 1500
   summoned_enemy_onlowhp: 20
-  _music: {fileID: 6011948478320540253}
 --- !u!114 &7366347048259669860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +170,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dd27cadd6908b024f8917e2d61c533c0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9553b6aadfb7df442b640500a0d7006e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

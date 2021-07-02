@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f01f0a830b55b641806577f75ebc887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest_description: NOT SET
+  quest_description: Slay the mighty Golem in Trinity Islands
   quest_title: Across The Lost Path
   time_limit: 0
   _quest_objective:

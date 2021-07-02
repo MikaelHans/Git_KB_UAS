@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest_description: 
-  quest_title: Fade To Black
+  quest_title: Defeat The Evil Wizard In the Cursed Graveyard
   time_limit: 0
   _quest_objective:
   - {fileID: 3696368114682902042}

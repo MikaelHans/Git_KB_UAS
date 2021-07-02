@@ -44,13 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f01f0a830b55b641806577f75ebc887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest_description: NOT SET
+  quest_description: Gather Some Magic Dus
   quest_title: Gather Some Magic Dust
   time_limit: 0
   _quest_objective:
   - {fileID: 634302449591760263}
   _questGiver_id: 0
-  _reward_points: 0
+  _reward_points: 1
 --- !u!1001 &7226347338381725665
 PrefabInstance:
   m_ObjectHideFlags: 0
