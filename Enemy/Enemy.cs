@@ -76,6 +76,8 @@ public class Enemy : Creature, IAttacking
         if (current_point >= path.vectorPath.Count && target.gameObject.GetComponent<Player>() == null)
         {
             target = null;
+            //test
+            choose_random_spot();
             return;
         }
 

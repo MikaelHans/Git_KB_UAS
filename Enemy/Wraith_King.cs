@@ -23,7 +23,7 @@ public class Wraith_King : Boss
      * _attack_window yang di game_character dibuat sebagai chargeattack window  
      */
     protected override void Update()
-    {
+    {        
         base.Update();
         //Debug.Log(gameObject.GetComponent<Rigidbody2D>().velocity.magnitude);
         if (is_retreating == true)

@@ -50,7 +50,7 @@ MonoBehaviour:
   _quest_objective:
   - {fileID: 3696368114682902042}
   _questGiver_id: 0
-  _reward_points: 15
+  _reward_points: 5
 --- !u!1001 &5865188700184283052
 PrefabInstance:
   m_ObjectHideFlags: 0
