@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 581de2ff93be2bd44afcea57b42fa7aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest_description: Slay the Demon King itself, the Wraith King
+  quest_description: Slay the Ultimate Monster , the Wraith King
   quest_title: The Thronetaker
   time_limit: 0
   _quest_objective:
