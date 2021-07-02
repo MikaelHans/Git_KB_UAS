@@ -6540,7 +6540,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -44409.344, y: 77373.805}
+  m_AnchoredPosition: {x: -46782.6, y: 81561.5}
   m_SizeDelta: {x: 100, y: 199.67609}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &933896241
@@ -10799,7 +10799,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -91831.234, y: -44689.414}
+  m_AnchoredPosition: {x: -96733.39, y: -47190.707}
   m_SizeDelta: {x: 184.32, y: 682.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1485419471
@@ -12472,7 +12472,7 @@ MonoBehaviour:
   active_quest: {fileID: 0}
   _hunter_ui: {fileID: 1754162996}
   _upgrade_ui: {fileID: 1355183743}
-  _hunter_rank: 4
+  _hunter_rank: 1
   _upgrade_point: 7
   _last_area: 
 --- !u!61 &1723345169
@@ -13640,7 +13640,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -44442.926, y: 77352.18}
+  m_AnchoredPosition: {x: -46816.184, y: 81539.875}
   m_SizeDelta: {x: 100, y: 199.67609}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1846565074
